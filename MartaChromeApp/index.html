@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html ng-app="myMartaApp">
+<head>
+    <title>Marta App</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-route.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        Enter Station Name:
+        <br />
+        <input type="text" id="src" ng-model="inputName" />
+        <br />
+        <!--placeholder -->
+        <div ng-view=""></div>
+    </div>
+</body>
+</html>
