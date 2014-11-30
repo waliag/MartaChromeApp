@@ -1,20 +1,25 @@
 ﻿<!doctype html>
-<html ng-app="myMartaApp">
+<html ng-app="myMartaApp" data-ng-csp="">
 <head>
     <title>Marta App</title>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular-route.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script src="angular.min.js"></script>
+    <script src="angular-route.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-    <div>
-        Enter Station Name:
-        <br />
-
-        <input type="text" id="src" ng-model="inputName" />
-        <br />
+    <div class="container">
         <!--placeholder -->
-        <div ng-view=""></div>
+        <div ng-view="" class="jumbotron"></div>
     </div>
 </body>
 </html>

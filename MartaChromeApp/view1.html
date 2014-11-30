@@ -1,1 +1,3 @@
-﻿<a href="#/view2">Show Timings </a>
+﻿<h2>Please select a station: </h2>
+<select ng-model="station"  ng-options="station for station in stationList" class="btn-lg"></select>
+<a href="#/timings/{{station}}" class="btn btn-primary">Show Timings</a>
